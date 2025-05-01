@@ -14,3 +14,6 @@ async function testConnection() {
 }
 
 testConnection();
+// 測試連線 node testConn.js
+//關閉測試 control c
+

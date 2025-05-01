@@ -31,16 +31,16 @@ try {
        }
    } catch (err) {
        console.error('操作失敗:', err);
-   
+   }
+
     // 4. DELETE 刪除
     sql = 'DELETE FROM STUDENT WHERE Student_ID = ?';
     const result = await conn.query(sql, ['S10810011']);
-    if (result.affectedRows >0){
+    if (result.affectedRows > 0) {
         console.log('已刪除該學生');
-} else {
-    console.log('刪除該學生失敗！');
-}
-
+    } else {
+        console.log('刪除該學生失敗！');
+    }
 }
 
 basicCrud();
